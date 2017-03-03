@@ -1,7 +1,7 @@
 CREATE TABLE Project
 (
-	id INT,
+	project_id INT,
 	description VARCHAR(45),
 	project_url VARCHAR(45),
-	PRIMARY KEY(id)	
+	PRIMARY KEY(project_id)	
 );

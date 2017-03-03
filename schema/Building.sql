@@ -1,6 +1,6 @@
 CREATE TABLE Building
 (
-	id INT,
+	building_id INT,
 	name VARCHAR(45),
-	PRIMARY KEY(id)
+	PRIMARY KEY(building_id)
 );

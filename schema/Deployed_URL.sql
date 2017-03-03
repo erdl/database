@@ -1,9 +1,9 @@
 CREATE TABLE Deployed_URL
 (
-	id INT,
+	deployed_url_id INT,
 	url_text VARCHAR(255),
 	building_id INT,
 	is_kioski VARCHAR(45),
-	PRIMARY KEY(id),
-	FOREIGN KEY (building_id) REFERENCES Building(id)
+	PRIMARY KEY(deployed_url_id),
+	FOREIGN KEY (building_id) REFERENCES Building(building_id)
 );

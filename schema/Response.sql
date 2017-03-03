@@ -1,14 +1,14 @@
 CREATE TABLE Response
 (
-	id INT, 
-	survey_id INT,
+	response_id INT, 
+	survey_info_id INT,
 	question_id INT,
 	deployed_url_id INT,
 	option_id INT,
-	timestamp DATETIME,
-	PRIMARY KEY(id),
-	FOREIGN KEY (survey_id) REFERENCES Survey(id),
-	FOREIGN KEY (question_id) REFERENCES Question(id),
-	FOREIGN KEY (deployed_url_id) REFERENCES Deployed_URL(id),
-	FOREIGN KEY (option_id) REFERENCES Option(id)
+	timestamp timestamptz,
+	PRIMARY KEY(response_id),
+	FOREIGN KEY (survey_info_id) REFERENCES Survey_Info(survey_info_id),
+	FOREIGN KEY (question_id) REFERENCES Question(question_id),
+	FOREIGN KEY (deployed_url_id) REFERENCES Deployed_URL(deployed_url_id),
+	FOREIGN KEY (option_id) REFERENCES Option(option_id)
 );
