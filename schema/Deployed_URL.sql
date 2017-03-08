@@ -1,6 +1,6 @@
 CREATE TABLE Deployed_URL
 (
-	deployed_url_id INT,
+	deployed_url_id serial,
 	url_text VARCHAR(255),
 	building_id INT,
 	is_kioski VARCHAR(45),

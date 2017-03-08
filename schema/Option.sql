@@ -1,6 +1,6 @@
 CREATE TABLE Option
 (
-	option_id INT,
+	option_id serial,
 	question_id INT,
 	text VARCHAR(45),
 	value VARCHAR(45),

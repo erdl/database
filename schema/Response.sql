@@ -1,6 +1,6 @@
 CREATE TABLE Response
 (
-	response_id INT, 
+	response_id serial, 
 	survey_info_id INT NOT NULL,
 	question_id INT NOT NULL,
 	deployed_url_id INT NOT NULL,
