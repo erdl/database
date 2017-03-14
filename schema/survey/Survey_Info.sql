@@ -1,7 +1,7 @@
 CREATE TABLE Survey_Info
 (
 	survey_info_id serial,
-	survey_name VARCHAR(45),
+	survey_name VARCHAR(45) UNIQUE,
 	description VARCHAR(45),
 	project_id INT,
 	PRIMARY KEY(survey_info_id),
